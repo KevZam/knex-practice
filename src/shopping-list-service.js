@@ -14,7 +14,7 @@ const shopping_list_services = {
     },
 
     createItem(knex, item){
-         return knex("shopping_list")
+        return knex("shopping_list")
         .returning(item)
         .insert(item)
     },
